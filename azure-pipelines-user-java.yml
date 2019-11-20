@@ -22,9 +22,10 @@ stages:
       vmImage: 'ubuntu-latest'
     steps:
     - task: Docker@2
-      displayName: Build Trips image
+      displayName: Build and push an image to container registry
       inputs:
-        command: build
+        command: buildAndPush
         dockerfile: 'apis/user-java/Dockerfile'
+        containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           $(tag)
