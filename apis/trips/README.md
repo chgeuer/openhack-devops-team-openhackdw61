@@ -29,3 +29,5 @@ go test
 ```
 
 > Note: this requires an actual database connection, so the required ENV variables need to be present.
+
+<!-- This commit touches the /trips API and should not trigger a build on the POI API-->
