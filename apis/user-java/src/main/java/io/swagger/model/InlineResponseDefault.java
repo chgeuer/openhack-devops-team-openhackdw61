@@ -105,4 +105,3 @@ public class InlineResponseDefault   {
     return o.toString().replace("\n", "\n    ");
   }
 }
-
